@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { ADLaM_Display } from "next/font/google";
 import "./globals.css";
+// import Link from "next/link";
 
+const inter = ADLaM_Display({
+  subsets: ['latin'],
+  weight: ['400'],
+
+});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -23,11 +30,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+       
         {children}
       </body>
     </html>
