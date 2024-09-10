@@ -4,11 +4,12 @@ import { ADLaM_Display } from "next/font/google";
 import "./globals.css";
 // import Link from "next/link";
 
-const inter = ADLaM_Display({
-  subsets: ['latin'],
-  weight: ['400'],
+// 删除未使用的变量 inter
+// const inter = ADLaM_Display({
+//   subsets: ['latin'],
+//   weight: ['400'],
+// });
 
-});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
